@@ -1,0 +1,136 @@
+
+*{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     header
+     { 
+        background-image: url(bg4.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        
+     
+     }
+        ul {
+             list-style: none;
+             position: relative;
+             font-size: 35px;
+             display: flex;
+             justify-content: space-around;
+           }
+           ul li{display: inline-block;}
+           ul li a
+           {
+              padding: 5px 20px;
+              color: #333;
+              text-decoration: none;
+              font-size: 35px;
+              transition: .9s ease;
+              display: flex;
+              justify-content: space-around;
+           }
+           li a:hover{background: #ddd;color: lightcoral;}
+           ul li .active a{background: #ddd;color: lightcoral;} 
+           .main{
+              max-width: 1200px;
+              margin-top: auto;
+           } 
+           .title{
+               color: black;
+               text-align: center;
+               padding: 30px;
+               margin-left: 20px;
+           } 
+          /* .par{
+            color: #ddd;
+            background-color: black;
+            text-align: center;
+            margin-top: 70px; 
+           }*/
+           .body{
+               font-family: arial;
+           }
+           .main1{
+               display: flex;
+               justify-content: space-around;
+           }
+           .cards
+           { 
+               width: 20%;
+               display: inline-block;
+               position: relative;
+               border-radius: 5px;
+               margin: 40px;
+               box-shadow: 2px 2px 10px black;
+               
+           }
+           .cards::before{
+           content: 'Get 20% off';
+          color: black;
+          top:0;
+          left: 0;
+          width: 310px;
+          height: 60px;
+          position: absolute;
+          opacity: 0;
+          text-align: center;
+          line-height: 60px;
+          transition: .8s;
+    /* font-size: 35px; */
+}
+.cards:hover::before{
+    opacity: 1;
+    background: linear-gradient(palevioletred,white);
+    transform: translateY(420px) scale(1.1);
+}
+           
+           .cards:hover{
+              box-shadow: 2px 2px 10px black;
+              
+           }
+            .image img{
+               width:100%;
+               border-top-right-radius: 5px;
+               border-top-left-radius: 5px;
+
+           }
+           .title1
+           {
+               text-align: center;
+               padding: 5px;
+               
+           }
+            .des{
+               text-align: center;
+               padding: 6px;
+               
+           }
+           button{
+               margin-top: 30px;
+               margin-bottom: 30px;
+               background-color: palevioletred;
+               border: 1px solid wheat;
+               padding: 5px;
+               border-radius: 5px;
+               cursor: pointer;
+           }
+           
+           button:hover{
+               background-color:wheat;
+               color: palevioletred;
+               transition: .5s;
+           } 
+           .footer{width: 100%;padding: 20px;background-color: whitesmoke;color: #000;text-align: center;}
+      
+
+
+
+
+
+
+           
